@@ -23,6 +23,7 @@ function handleSubmit(event) {
              document.getElementById('confidence').innerHTML = res.confidence
              document.getElementById('subjectivity').innerHTML = res.subjectivity
              document.getElementById('agreement').innerHTML = res.agreement
+             document.getElementById('irony').innerHTML = res.agreement
 
         })
         .catch(error => console.log('error', error));

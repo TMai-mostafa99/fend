@@ -39,7 +39,7 @@ app.listen(8080, function () {
 app.post('/test' , async function(req,res){
     const url = req.body.url
     const key = process.env.key
-    console.log("url : " , url , " key " , key)
+    console.log("url : " , url)
     const api= await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${key}&url=${url}&lang=en`)
     const data = await api.json()
     console.log(data)
